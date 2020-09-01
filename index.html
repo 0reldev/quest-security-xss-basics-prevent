@@ -47,7 +47,16 @@
         input.addEventListener("input", updateValue);
 
         function updateValue(e) {
-            log.innerHTML = e.target.value;
+            log.innerHTML = escapeOutput(e.target.value);
+        }
+
+        function escapeOutput(toOutput){
+            return toOutput.replace(/\&/g, '&amp;')
+                .replace(/\</g, '&lt;')
+                .replace(/\>/g, '&gt;')
+                .replace(/\"/g, '&quot;')
+                .replace(/\'/g, '&#x27')
+                .replace(/\//g, '&#x2F');
         }
 
     </script>
