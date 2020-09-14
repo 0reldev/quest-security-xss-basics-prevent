@@ -4,4 +4,6 @@
 
 This repository contains a simple web page with a XSS vulnerability.
 
-The aim of this exercice is to fix that vulnerabily thanks to an encoding technique.
+The aim of this exercice is to fix that vulnerability thanks to an encoding technique.
+
+![screen capture](https://github.com/0reldev/quest-security-xss-basics-prevent/blob/master/img/screen-capture.png?raw=true)
